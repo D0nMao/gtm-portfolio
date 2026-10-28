@@ -1,0 +1,8 @@
+date,process,sop_version,executor,model,inputs,outputs,deviation,approved_by,credits,human_minutes,note
+2026-10-28,P03 Web radar,v1,Research,sonnet,4 job boards,7 companies,no,,0,0,One board produced all results
+2026-10-28,P08 Free verification,v1,Data,haiku,9 companies,7 pass,no,,0,0,2 rejected: outsourcing models
+2026-10-28,P05 LinkedIn radar,v1,Manager+Data,haiku,25 postings,0 new,no,,0,5,Low-yield search demoted
+2026-10-28,P10 Email reveal,v1,Manager,,5 decision makers,5 verified emails,no,Owner,5,1,
+2026-10-28,P15 Copy,v1,Copy,opus,45 emails,45 rewritten,yes,,0,0,Template drift caught by owner (case 02)
+2026-10-28,P16 QA,v1,QA,sonnet,45 emails,45 approved,no,,0,0,
+2026-10-28,P17 Gmail drafts,v1,RevOps,haiku,50 texts,49 drafts,yes,,0,0,8 wrong recipients; 2 bounced; 6 recreated (case 05)
