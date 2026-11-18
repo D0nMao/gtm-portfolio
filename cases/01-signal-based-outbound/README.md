@@ -29,8 +29,8 @@ flowchart TD
    1. They are already hiring in LatAm.
    2. They already have remote people outside the US.
    3. The role fits, and the question is whether they would.
-2. **Dedupe.** Every company is checked against the CRM (420 accounts) and HubSpot first. Existing accounts with a new posting are not discarded: they move up as a reason for the next touch.
-3. **Free verification.** One people search per company, with a 1–200 employee filter and founder or C-level seniority. That confirms size and the decision maker without spending anything. Staffing, EOR and outsourcing firms are competitors and get rejected.
+2. **Dedupe.** Every company is checked against the CRM (420 accounts when this run happened, 497 on 18 Nov) and HubSpot first. Existing accounts with a new posting are not discarded: they move up as a reason for the next touch.
+3. **Free verification.** One people search per company, with an employee-size filter (1–200 when this run happened; since 16 Nov, 1–50 only) and founder or C-level seniority. That confirms size and the decision maker without spending anything. Staffing, EOR and outsourcing firms are competitors and get rejected.
 4. **Waterfall enrichment.** Company website, then team page, then patterns from public commits, then Apollo. A credit is spent only when the Apollo person matches the company's domain and headquarters.
 5. **Human gate.** The manager asks before every reveal. That day: "OK for 5 credits? You'd have 26 left."
 
@@ -52,4 +52,5 @@ A LinkedIn job search ("Full Stack, United States, Remote, last 24h"): 25 postin
 ## What this proves, and what it doesn't
 
 - **It proves** the system can cut thousands of postings down to a handful of verified decision makers, for about one credit per contact. Across the month, it put about 500 one-to-one emails in front of decision makers with ~1.2% bounces. Two of them got into pricing conversations: a CSO who replied the same day, and an HR manager the Head of Ops referred me to.
+- **Update, 18 Nov:** the same signal pattern produced the first positive reply: an HR manager at a company with an open LatAm posting asked for a call (no meeting held yet). A posting open for 14 days or more now counts as a difficulty signal, and that angle is being tested.
 - **It doesn't prove** that the signal turns into meetings. Booked meetings are still at 0. The bottleneck turned out to be the message, not the targeting (see [case 02](../02-copy-qa-without-templates/)).

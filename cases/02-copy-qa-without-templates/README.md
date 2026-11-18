@@ -49,6 +49,7 @@ Before and after, one first touch:
 
 - **It proves** that template drift can be measured and blocked automatically, and that the check is cheap: no model, it runs in under a second.
 - **It doesn't prove** that the new copy books meetings. The A/B read is pending. That number will go here, whatever it is.
+- **Update, 18 Nov:** from 3 to 18 Nov, 234 emails went out under the new checks (54 first touches, 180 follow-ups) with 2 replies, 1 of them positive (a call request), and no bounces. That is too few to call an A/B result. Meetings booked are still 0.
 
 ## Lesson
 

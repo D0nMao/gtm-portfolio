@@ -40,6 +40,7 @@ I set both through the Wix DNS API and verified them on public DNS, then logged 
 | Bounces | 6 (~1.2%) |
 | Authentication | SPF, DKIM, DMARC pass on both domains |
 | mail-tester | 10/10 after the signature fix |
+| Update, 3 to 18 Nov | 234 emails, 0 bounces, 0 auto-replies |
 
 ## What this proves, and what it doesn't
 

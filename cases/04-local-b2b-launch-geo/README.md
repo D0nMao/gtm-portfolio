@@ -28,6 +28,25 @@
    - Partnership outreach to boutique hotels and venues.
    - A four-touch LinkedIn follow-up system with reply branches.
 
+## Results: event requests by channel
+
+Since launch, Company B received **4 event requests** (quotes and messages about events and stage builds). All 4 reached a proposal. None has closed yet.
+
+| Channel | Requests |
+|---|---|
+| Email | 1 |
+| WhatsApp | 2 |
+| Directories | 1 |
+
+Counts only, no client names. Closing is still pending, so revenue is not reported.
+
+## Update, 10 Nov: Google Maps visibility
+
+- Reviews: 12 visible (the owner's was removed).
+- A first Maps search showed the profile at position 6, but that result was personalized. A second search with the same phrase, over the full list of about 90 results, did not show it at all, so I treat the position-6 reading as invalid.
+- Hypothesis, not confirmed: few reviews with text, no visible address (service-area business), no recent posts, no "years in business" label. Competitors that rank put the search words in their names, which Google can penalize, so I am not copying that.
+- Next step: measure weekly with the same phrase from the same place. Further Maps work and venue outreach are paused until December because the owner's calendar is full.
+
 ## Lessons logged
 
 - In Wix, saving is not publishing. Every change was verified on the published site (view-source, the schema validator, the sitemap).
@@ -38,4 +57,6 @@
 ## What this proves, and what it doesn't
 
 - **It proves** the launch checklist was executed and verified end to end: domain, site, structured data, profile, reviews.
-- **It doesn't prove** the AI-search result yet. The Gemini re-test is scheduled about two weeks after the baseline (early November), and the first effects usually show in 8–12 weeks. Corporate meetings are still pending, so they are not reported here.
+- **It doesn't prove** the AI-search result yet. The Gemini re-test was scheduled for early November and I have no result to report yet. The first effects usually show in 8–12 weeks, and the profile does not yet appear in generic Maps searches.
+- **It shows** the channels are producing demand: 4 requests reached a proposal, across 3 channels.
+- **It doesn't show** revenue or conversion: none of the 4 has closed, and 4 requests is too small a sample to say which channel is best.

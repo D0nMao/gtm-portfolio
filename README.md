@@ -2,7 +2,7 @@
 
 I build outbound and go-to-market systems: an AI agent team that finds accounts with buying signals, verifies them before spending a single credit, writes 1:1 messages, checks them automatically, and sends on a throttle a human controls.
 
-This repo documents two systems I built and run in production (October 2026), one per company, plus the operating model behind both. Everything here is sanitized: companies and people are anonymized, and all sample data is synthetic (`*.example.com`).
+This repo documents two systems I built and run in production (October to November 2026; data updated 18 Nov 2026), one per company, plus the operating model behind both. Everything here is sanitized: companies and people are anonymized, and all sample data is synthetic (`*.example.com`).
 
 | | Company A | Company B |
 |---|---|---|
@@ -11,20 +11,28 @@ This repo documents two systems I built and run in production (October 2026), on
 | Channels | Cold email, LinkedIn | LinkedIn, email, WhatsApp, Google and AI search |
 | My role | Head of Sales, built the GTM system end to end | Built the B2B line's acquisition system |
 
-## Results so far (about four weeks, from zero)
+## Results so far (about seven weeks, from zero; updated 18 Nov 2026)
 
 | Metric | Value | Notes |
 |---|---|---|
-| Cold emails sent | ~500 | Company A, one mailbox, capped at 45/day |
-| Accounts in CRM | 420 | Every account has a source and a documented signal |
-| Bounce rate | ~1.2% (6) | 2 of the 6 came from a bug I documented in [case 05](cases/05-incident-thread-recipient/) |
+| Cold emails sent | ~500 in the first month; 234 more from 3 to 18 Nov | Company A, one mailbox, capped at 45/day. The 234 are 54 first touches and 180 follow-ups to 183 unique people. I have not merged the two into one running total |
+| Accounts in CRM | 497 (420 at the first count) | Every account has a source and a documented signal. 76 new, 340 connected, 57 discarded, 2 that were already clients before I started |
+| Bounce rate | ~1.2% (6) in the first month; 0 of 234 from 3 to 18 Nov | 2 of the first 6 came from a bug I documented in [case 05](cases/05-incident-thread-recipient/). On 18 Nov a draft to an address that had bounced on 9 Oct was caught and deleted before sending |
 | Authentication | SPF, DKIM, DMARC | Pass on Company A (mail-tester 10/10 after the fix in [case 03](cases/03-deliverability-and-throttled-sender/)); set up from scratch on Company B's new domain |
-| Reply rate | ~1% | 2 replies reached pricing with decision makers (a CSO; an HR manager after an internal referral) |
-| Meetings booked | 0 | The open problem. Diagnosis and fix in [case 02](cases/02-copy-qa-without-templates/) |
+| Replies | ~1% in the first month; 2 from 3 to 18 Nov (1 positive, 1 neutral) | First month: 2 replies reached pricing with decision makers (a CSO; an HR manager after an internal referral). On 18 Nov an HR manager asked for a call, the first positive reply to the "open job posting in LatAm" angle |
+| Meetings booked (Company A) | 0 | The open problem; one call request is pending as of 18 Nov. Diagnosis and fix in [case 02](cases/02-copy-qa-without-templates/) |
+| Meetings booked (Company B) | 4 at proposal stage | The 4 event requests below, none closed yet |
 | Templated-copy errors per batch | 21 → 3 | Automated validator, same 45-email batch before and after |
-| Google reviews (Company B) | 0 → 12 | Five-star reviews in ~2 hours from one WhatsApp campaign |
+| Google reviews (Company B) | 0 → 12 | Five-star reviews in ~2 hours from one WhatsApp campaign. Still 12 on 10 Nov. The profile does not yet show up in generic "corporate events Bogotá" Maps searches; [case 04](cases/04-local-b2b-launch-geo/) has the measurements |
+| Event requests (Company B) | 4, all at proposal stage | Quotes and messages for events and stage builds since launch: 1 by email, 2 by WhatsApp, 1 from directories. None closed yet. Breakdown in [case 04](cases/04-local-b2b-launch-geo/) |
 
-I report the meetings number as it is. The system is a month old, and what it has proven so far is the top of the funnel: finding, verifying, reaching decision makers, and getting into pricing conversations. The case studies say what each part proves and what it does not.
+I report the meetings number as it is. Company A has 0. Company B has 4 requests that reached a proposal, and none has closed. The systems are about seven weeks old, and what they have proven so far is the top of the funnel: finding, verifying, reaching decision makers, and getting into pricing and proposal conversations. The case studies say what each part proves and what it does not.
+
+## What changed in November
+
+- **Target rule:** Company A now sends only to companies of 1 to 50 people (51 or more stopped working), and the score threshold went from 7 to 5.
+- **Credits:** Apollo credits ran out on 18 Nov, so cold first touches are paused and the daily 45 go to follow-ups first.
+- **Source of truth:** the CRM had drifted (20 accounts marked "no first touch" had already had two emails), so every batch is now cross-checked against Gmail, not against the CRM field.
 
 ## Case studies
 
