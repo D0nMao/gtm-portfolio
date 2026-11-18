@@ -55,6 +55,7 @@ I report the meetings number as it is. Company A has 0. Company B has 4 requests
 - **[Tools](tools/):** the code that runs in production, translated and sanitized:
   - `throttled-sender.gs`: Gmail drafts sent one at a time, inside business hours, with a daily cap and a kill switch.
   - `radar-himalayas.js`: a job-board signal radar.
+  - `radar-ats.js`: polls ~90 public company job boards (list from the open `spanish-top-tech-companies` dataset); `--mode leads` finds the roles we place, default mode finds remote roles open to LatAm with disclosed USD/EUR pay.
   - `validate-copy.js`: catches repeated phrasing, banned phrases and length problems across a batch.
   - `sanitize-check.js`: the gate this repo runs before every commit.
 - **[Agents](agents/):** the role specs for each agent.

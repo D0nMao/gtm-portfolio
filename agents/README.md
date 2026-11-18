@@ -15,6 +15,11 @@ These are condensed versions of the Claude Code subagent definitions (`.claude/a
 - Rejects staffing, EOR and outsourcing firms (competitors), and large companies without a strong signal.
 - Dedupes against the CRM. Existing accounts with a new posting come back as "signal for the next touch".
 
+## Role scout (Sonnet · read-only)
+- Runs `radar-himalayas.js` and `radar-ats.js --mode leads` and returns companies posting the roles Company A places (engineers, support, admin, finance ops).
+- Priority: 1 open to LatAm · 2 remote · 3 the role fits. Hands the rows to Research for competitor and size filtering.
+- Known limit: the ATS list is a curated set of mostly large companies, so most rows fail the 1 to 50 people rule. Use it as a source of signals, not as the lead list.
+
 ## Data (Haiku · read-only)
 - **Dedupe:** checks the CRM and HubSpot by company and domain.
 - **Free verification:** one people search per company, with a 1–200 employee filter and founder or C-level seniority. Nobody found means too big or not in the database, so the company is rejected.
